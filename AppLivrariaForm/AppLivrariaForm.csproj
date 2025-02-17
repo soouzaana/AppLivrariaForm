@@ -126,6 +126,12 @@
     <Compile Include="Formularios\FormCadastrarLivro.Designer.cs">
       <DependentUpon>FormCadastrarLivro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FormConsultarPorAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormConsultarPorAutor.Designer.cs">
+      <DependentUpon>FormConsultarPorAutor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FormGerenciarGeneros.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FormCadastrarLivro.resx">
       <DependentUpon>FormCadastrarLivro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormConsultarPorAutor.resx">
+      <DependentUpon>FormConsultarPorAutor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FormGerenciarGeneros.resx">
       <DependentUpon>FormGerenciarGeneros.cs</DependentUpon>

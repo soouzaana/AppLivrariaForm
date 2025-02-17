@@ -95,5 +95,11 @@ namespace AppLivrariaForm
             FormPesquisarLivro form = new FormPesquisarLivro();
             form.ShowDialog();
         }
+
+        private void btConsultarPorAutor_Click(object sender, EventArgs e)
+        {
+            FormConsultarPorAutor form = new FormConsultarPorAutor();
+            form.ShowDialog();
+        }
     }
 }

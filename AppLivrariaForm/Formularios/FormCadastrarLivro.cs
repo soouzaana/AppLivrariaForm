@@ -64,6 +64,7 @@ namespace AppLivrariaForm.Formularios
             livro.Ano = Convert.ToInt32(txtAno.Text);
             livro.Id = IdLivro; // chave primaria
             livro.IdGenero = IdGenero; // chave estrangeira
+            livro.IdAutor = IdAutor; // chave estrangeira
 
             ListaLivrosTemp.Add(livro);
             IdLivro++;

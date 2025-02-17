@@ -40,6 +40,7 @@ namespace AppLivrariaForm.Contexto
                     Livro livro = new Livro();
                     livro.Id = Convert.ToInt32(dados["Id"]);
                     livro.IdGenero = Convert.ToInt32(dados["GeneroId"]);
+                    livro.IdAutor = Convert.ToInt32(dados["AutorId"]);
                     livro.Titulo = dados["Titulo"].ToString();
                     livro.Classificacao = dados["Classificacao"].ToString();
                     livro.ISBN = Convert.ToInt32(dados["ISBN"]);
@@ -58,12 +59,13 @@ namespace AppLivrariaForm.Contexto
 
         public void InserirLivro(Livro livro)
         {
-            string sql = "INSERT INTO LIVRO (GeneroId, Titulo, Classificacao, ISBN, Ano) VALUES (@GeneroId, @Titulo, @Classificacao, @ISBN, @Ano)";
+            string sql = "INSERT INTO LIVRO (GeneroId, AutorId, Titulo, Classificacao, ISBN, Ano) VALUES (@GeneroId, @AutorId, @Titulo, @Classificacao, @ISBN, @Ano)";
             try
             {
                 MySqlCommand comando = new MySqlCommand(sql, conexao);
                     
                 comando.Parameters.AddWithValue("@GeneroId", livro.IdGenero);
+                comando.Parameters.AddWithValue("@AutorId", livro.IdAutor);
                 comando.Parameters.AddWithValue("@Titulo", livro.Titulo);
                 comando.Parameters.AddWithValue("@Classificacao", livro.Classificacao);
                 comando.Parameters.AddWithValue("@ISBN", livro.ISBN);
@@ -84,12 +86,13 @@ namespace AppLivrariaForm.Contexto
 
         public void AtualizarLivro(Livro livro)
         {
-            string sql = "UPDATE LIVRO SET GeneroId = @GeneroId, Titulo = @Titulo, Classificacao = @Classificacao, ISBN = @ISBN, Ano = @Ano WHERE Id = @Id";
+            string sql = "UPDATE LIVRO SET GeneroId = @GeneroId, AutorId = @AutorId, Titulo = @Titulo, Classificacao = @Classificacao, ISBN = @ISBN, Ano = @Ano WHERE Id = @Id";
             try
             {
                 MySqlCommand comando = new MySqlCommand(sql, conexao);
 
                 comando.Parameters.AddWithValue("@GeneroId", livro.IdGenero);
+                comando.Parameters.AddWithValue("@AutorId", livro.IdAutor);
                 comando.Parameters.AddWithValue("@Titulo", livro.Titulo);
                 comando.Parameters.AddWithValue("@Classificacao", livro.Classificacao);
                 comando.Parameters.AddWithValue("@ISBN", livro.ISBN);

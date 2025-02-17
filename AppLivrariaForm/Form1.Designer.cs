@@ -43,9 +43,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btConsultarLivro = new System.Windows.Forms.Button();
             this.btGerenciarLivro = new System.Windows.Forms.Button();
             this.btPesquisarLivro = new System.Windows.Forms.Button();
+            this.btConsultarLivro = new System.Windows.Forms.Button();
+            this.btConsultarPorAutor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -54,7 +55,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.label1.Location = new System.Drawing.Point(26, 449);
+            this.label1.Location = new System.Drawing.Point(26, 563);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(615, 29);
             this.label1.TabIndex = 10;
@@ -223,6 +224,30 @@
             this.label5.TabIndex = 27;
             this.label5.Text = "LIVRO:";
             // 
+            // btGerenciarLivro
+            // 
+            this.btGerenciarLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btGerenciarLivro.Location = new System.Drawing.Point(691, 433);
+            this.btGerenciarLivro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btGerenciarLivro.Name = "btGerenciarLivro";
+            this.btGerenciarLivro.Size = new System.Drawing.Size(291, 62);
+            this.btGerenciarLivro.TabIndex = 29;
+            this.btGerenciarLivro.Text = "GERENCIAR LIVRO";
+            this.btGerenciarLivro.UseVisualStyleBackColor = true;
+            this.btGerenciarLivro.Click += new System.EventHandler(this.btGerenciarLivro_Click);
+            // 
+            // btPesquisarLivro
+            // 
+            this.btPesquisarLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btPesquisarLivro.Location = new System.Drawing.Point(691, 505);
+            this.btPesquisarLivro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btPesquisarLivro.Name = "btPesquisarLivro";
+            this.btPesquisarLivro.Size = new System.Drawing.Size(291, 62);
+            this.btPesquisarLivro.TabIndex = 30;
+            this.btPesquisarLivro.Text = "PESQUISAR LIVRO";
+            this.btPesquisarLivro.UseVisualStyleBackColor = true;
+            this.btPesquisarLivro.Click += new System.EventHandler(this.btPesquisarLivro_Click);
+            // 
             // btConsultarLivro
             // 
             this.btConsultarLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -235,35 +260,24 @@
             this.btConsultarLivro.UseVisualStyleBackColor = true;
             this.btConsultarLivro.Click += new System.EventHandler(this.btConsultarLivro_Click);
             // 
-            // btGerenciarLivro
+            // btConsultarPorAutor
             // 
-            this.btGerenciarLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btGerenciarLivro.Location = new System.Drawing.Point(691, 361);
-            this.btGerenciarLivro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btGerenciarLivro.Name = "btGerenciarLivro";
-            this.btGerenciarLivro.Size = new System.Drawing.Size(291, 62);
-            this.btGerenciarLivro.TabIndex = 29;
-            this.btGerenciarLivro.Text = "GERENCIAR LIVRO";
-            this.btGerenciarLivro.UseVisualStyleBackColor = true;
-            this.btGerenciarLivro.Click += new System.EventHandler(this.btGerenciarLivro_Click);
-            // 
-            // btPesquisarLivro
-            // 
-            this.btPesquisarLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btPesquisarLivro.Location = new System.Drawing.Point(691, 433);
-            this.btPesquisarLivro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btPesquisarLivro.Name = "btPesquisarLivro";
-            this.btPesquisarLivro.Size = new System.Drawing.Size(291, 62);
-            this.btPesquisarLivro.TabIndex = 30;
-            this.btPesquisarLivro.Text = "PESQUISAR LIVRO";
-            this.btPesquisarLivro.UseVisualStyleBackColor = true;
-            this.btPesquisarLivro.Click += new System.EventHandler(this.btPesquisarLivro_Click);
+            this.btConsultarPorAutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btConsultarPorAutor.Location = new System.Drawing.Point(691, 361);
+            this.btConsultarPorAutor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btConsultarPorAutor.Name = "btConsultarPorAutor";
+            this.btConsultarPorAutor.Size = new System.Drawing.Size(291, 62);
+            this.btConsultarPorAutor.TabIndex = 31;
+            this.btConsultarPorAutor.Text = "CONSULTAR LIVROS POR AUTOR";
+            this.btConsultarPorAutor.UseVisualStyleBackColor = true;
+            this.btConsultarPorAutor.Click += new System.EventHandler(this.btConsultarPorAutor_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1035, 540);
+            this.ClientSize = new System.Drawing.Size(1035, 621);
+            this.Controls.Add(this.btConsultarPorAutor);
             this.Controls.Add(this.btPesquisarLivro);
             this.Controls.Add(this.btGerenciarLivro);
             this.Controls.Add(this.btConsultarLivro);
@@ -306,9 +320,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btConsultarLivro;
         private System.Windows.Forms.Button btGerenciarLivro;
         private System.Windows.Forms.Button btPesquisarLivro;
+        private System.Windows.Forms.Button btConsultarLivro;
+        private System.Windows.Forms.Button btConsultarPorAutor;
     }
 }
 

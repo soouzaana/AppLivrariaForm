@@ -17,7 +17,6 @@ namespace AppLivrariaForm.Formularios
     public partial class FormConsultarLivro : Form
     {
         int contExc = 1;
-        int idMulta = 1;
         List<Livro> ListaLivros = new List<Livro>();
         List<Genero> ListaGeneros = new List<Genero>();
         public FormConsultarLivro()

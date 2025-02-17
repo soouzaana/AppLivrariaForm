@@ -84,7 +84,7 @@ namespace AppLivrariaForm.Contexto
 
         public void AtualizarAutor(Autor autor)
         {
-            string sql = "UPDATE AUTOR SET Nome = @Nome, Nacionalidade = @Nacionalidade, GenerosAutor = @GenerosAutor, Nascimento = @Nascimento WHERE IdAutor = @id";
+            string sql = "UPDATE AUTOR SET Nome = @Nome, Nacionalidade = @Nacionalidade, GenerosAutor = @GenerosAutor, Nascimento = @Nascimento WHERE Id = @id";
             try
             {
                 MySqlCommand comando = new MySqlCommand(sql, conexao);
@@ -108,7 +108,7 @@ namespace AppLivrariaForm.Contexto
 
         public void DeletarAutor(Autor autor)
         {
-            string sql = "DELETE FROM AUTOR WHERE IdAutor = @id";
+            string sql = "DELETE FROM AUTOR WHERE Id = @id";
             try
             {
                 MySqlCommand comando = new MySqlCommand(sql, conexao);
